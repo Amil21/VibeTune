@@ -1,28 +1,38 @@
-backend/__pycache__
-backend/.venv
+# Python backend
+backend/__pycache__/
+backend/.venv/
+backend/venv/
+backend/*.pyc
 
-# Logs
-frontend/logs
+# Node.js frontend
+frontend/node_modules/
+frontend/.DS_Store
+frontend/coverage/
+frontend/logs/
 frontend/*.log
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/pnpm-debug.log*
 frontend/lerna-debug.log*
-
-frontend/node_modules
-frontend/.DS_Store
-frontend/coverage
 frontend/*.local
 
+# Cypress test artifacts
 frontend/cypress/videos/
 frontend/cypress/screenshots/
+
+# Ignore files/folders starting with 'ref' in src
 frontend/src/ref*
 
-# Editor directories and files
-frontend/.idea
+# Editor/project files
+frontend/.idea/
 frontend/*.suo
 frontend/*.ntvs*
 frontend/*.njsproj
 frontend/*.sln
 frontend/*.sw?
+.vscode/
+.DS_Store
+
+# System files
+Thumbs.db
